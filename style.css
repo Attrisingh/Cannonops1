@@ -1,0 +1,161 @@
+
+:root {
+  --thistle: #cdb4dbff;
+  --fairy-tale: #ffc8ddff;
+  --carnation-pink: #ffafccff;
+  --uranian-blue: #bde0feff;
+  --light-sky-blue: #a2d2ffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(90deg, var(--uranian-blue), var(--light-sky-blue), var(--carnation-pink));
+  background-attachment: fixed;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  overflow: hidden;
+}
+.logo-container img {
+  height: 110px;
+  width: 130px;
+  margin-left: 4%;
+  border-radius: 10px;
+}
+
+
+.nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.nav :hover {
+  color: var(--carnation-pink);
+  transition: color 0.3s ease;
+}
+
+/* Main Content */
+.main-content {
+  padding: 2rem;
+}
+
+.services-header{
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: rgba(255, 200, 221, 0.85);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.services-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.services-header p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.services-header h2 {
+  text-align: center;
+  font-size: 1.7rem;  
+  margin-bottom: 1rem;
+}
+
+
+.service-item h3 {
+  display: flex;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.service-item ul{
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  padding: 2rem 1rem;
+  cursor: pointer;
+}
+
+.service-item:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 2.5rem 1.5rem;
+}
+
+.service-item summary {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: grey;
+  padding: 0.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+ .final {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: #555;
+  font-weight: 700;
+  text-align: center;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  border-radius: 10px;
+  margin-top: 3%;
+}
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-top: 4rem;
+}
+
